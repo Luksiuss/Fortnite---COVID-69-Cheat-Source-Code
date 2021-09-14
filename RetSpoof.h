@@ -1,5 +1,5 @@
 #pragma once
-#include "includes.h"
+#include "stdafx.h"
 
 namespace Spoofer {
 	namespace _SpoofCallInternal {
@@ -32,9 +32,9 @@ namespace Spoofer {
 	Ret SpoofCall(Ret(*fn)(Args...), Args... args) {
 		static PVOID trampoline = nullptr;
 		if (!trampoline) {
-			trampoline = Utilities::FindPattern(skCrypt("\xFF\x27"), skCrypt("xx"));
+			trampoline = Utilities::FindPattern("\xFF\x27", "xx");
 			if (!trampoline) {
-				Warn(skCrypt("Failed to find valid trampoline"));
+				MessageBox(0, L"Failed to find valid trampoline", L"Failure", 0);
 				ExitProcess(0);
 			}
 		}
