@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <MASM Include="_spoofer_stub.asm">
+      <Filter>Calls</Filter>
+    </MASM>
+    <MASM Include="spoofinternal.asm">
+      <Filter>Calls</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="FortUpdater.cpp">
+      <Filter>Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="offsets.cpp">
+      <Filter>SDK &amp; Offsets</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>Pattern Scans</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\imgui.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\imgui_draw.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\imgui_impl_dx11.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Pattern Scans</Filter>
+    </ClCompile>
+    <ClCompile Include="junk.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FortUpdater.h">
+      <Filter>Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>SDK &amp; Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="Vectors.h">
+      <Filter>SDK &amp; Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs.h">
+      <Filter>SDK &amp; Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr.h">
+      <Filter>XOR</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr.hpp">
+      <Filter>XOR</Filter>
+    </ClInclude>
+    <ClInclude Include="spoof_call.h">
+      <Filter>Calls</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Pattern Scans</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatHelper.h">
+      <Filter>Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="RetSpoof.h">
+      <Filter>Calls</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixStructs.h">
+      <Filter>SDK &amp; Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="Major.h">
+      <Filter>Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="MainHooking.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\color.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\imconfig.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\imgui.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\imgui_impl_dx11.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\imgui_internal.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\stb_rect_pack.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\stb_textedit.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\stb_truetype.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawMenu.h">
+      <Filter>Menu And Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="MainOptions.h">
+      <Filter>Menu And Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Exploits.h">
+      <Filter>Exploits</Filter>
+    </ClInclude>
+    <ClInclude Include="oldMenu.h">
+      <Filter>Menu And Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="memory.h">
+      <Filter>Pattern Scans</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Pattern Scans</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamicimports.h">
+      <Filter>Calls</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Cheat">
+      <UniqueIdentifier>{d881dbea-9c10-4579-9f92-21a52990c3c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{ad48b134-d66a-4f49-bd58-935020a1d43f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu And Settings">
+      <UniqueIdentifier>{a3836422-fae2-43f8-b1a5-4b9611b5d462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exploits">
+      <UniqueIdentifier>{4cc261aa-7191-4e42-85bb-6477c8ab00a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pattern Scans">
+      <UniqueIdentifier>{1d152c75-fef1-451e-8621-3373700f7e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{643fa532-7ce9-40ae-aecd-f85b64537de1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Updater">
+      <UniqueIdentifier>{6b745708-04f0-447a-a853-b61afc83eec3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK &amp; Offsets">
+      <UniqueIdentifier>{f62cc7c1-1008-4048-a5c2-82dc8e07bfaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Calls">
+      <UniqueIdentifier>{e9884604-4257-425b-99e5-e7cc40347b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XOR">
+      <UniqueIdentifier>{00467293-c61f-4837-b891-32521444043e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
